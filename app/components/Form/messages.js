@@ -1,7 +1,7 @@
 /*
- * HomePage Messages
+ * Form Messages
  *
- * This contains all the text for the HomePage component.
+ * This contains all the text for the Form component.
  */
 import { defineMessages } from 'react-intl';
 
