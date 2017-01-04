@@ -19,7 +19,8 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
     this.state = {
       version: "",
       allegiance: "",
-      faction: ""
+      faction: "",
+      units: []
     };
 
     this.versionChange = this.versionChange.bind(this);
@@ -81,7 +82,7 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
           <div className="field">
             <label>
               <FormattedMessage {...messages.unit} />
-              <FactionUnit faction={this.state.faction} />
+              <FactionUnit faction={this.state.faction} unitSelected={this.unitSelected.bind(this)} />
             </label>
           </div>
         </div>
@@ -98,6 +99,12 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
   factionChanged(faction) {
     var state = this.state;
     state.faction = faction;
+    this.setState(state);
+  }
+
+  unitSelected(unit) {
+    var state = this.state;
+    state.units.push(unit);
     this.setState(state);
   }
 

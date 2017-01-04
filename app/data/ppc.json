@@ -37,6 +37,39 @@
                             "cost": 10
                         }
                     ]
+                },
+                {
+                    "name": "Drakeseer",
+                    "cost": 430,
+                    "type": "hero",
+                    "options": []
+                },
+                {
+                    "name": "Loremaster",
+                    "cost": 110,
+                    "type": "hero",
+                    "options": []
+                },
+                {
+                    "name": "Swordmasters",
+                    "cost": 16,
+                    "type": "unit",
+                    "options": [
+                        {
+                            "name": "Bladelord",
+                            "cost": 5
+                        },
+                        {
+                            "name": "Standard Bearer",
+                            "cost": 5
+                        },
+                        {
+                            "name": "Hornblower",
+                            "cost": 5
+                        }
+                    ],
+                    "min": 5,
+                    "max": 30
                 }
             ]
         }

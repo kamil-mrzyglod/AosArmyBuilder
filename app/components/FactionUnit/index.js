@@ -12,6 +12,14 @@ import ppcData from '../../data/ppc.json';
 
 class FactionUnit extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
+  constructor(props) {
+    super(props);
+
+
+
+    this.selectUnit = this.selectUnit.bind(this);
+  }
+
   renderUnits() {   
     if (this.props.faction === 'aelves') {
       return (
@@ -32,15 +40,19 @@ class FactionUnit extends React.Component { // eslint-disable-line react/prefer-
 
     for (var unit in units) {
       for (var i = 0; i <= units[unit].length - 1; i++) {
-        unitNames.push(<div className="item">
-          <div key="{i}" className="content">
-            <div className="header">{units[unit][i].name}</div>
+        unitNames.push(<div key={i} className="item">
+          <div className="content">
+            <div className="header" onClick={this.selectUnit.bind(this, units[unit][i])}>{units[unit][i].name}</div>
           </div>
         </div>);
       }
     }
 
     return unitNames;
+  }
+
+  selectUnit(unit) {
+    this.props.unitSelected(unit);
   }
 
   render() {
