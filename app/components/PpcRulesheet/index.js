@@ -9,6 +9,7 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 import Faction from '../Faction';
+import FactionUnit from '../FactionUnit';
 
 class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
@@ -17,7 +18,8 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
 
     this.state = {
       version: "",
-      allegiance: ""
+      allegiance: "",
+      faction: ""
     };
 
     this.versionChange = this.versionChange.bind(this);
@@ -74,11 +76,12 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
             <label>
               <FormattedMessage {...messages.faction} />
             </label>
-            <Faction allegiance={this.state.allegiance} />
+            <Faction allegiance={this.state.allegiance} factionChanged={this.factionChanged.bind(this)} />
           </div>
           <div className="field">
             <label>
               <FormattedMessage {...messages.unit} />
+              <FactionUnit faction={this.state.faction} />
             </label>
           </div>
         </div>
@@ -89,6 +92,12 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
   allegianceSelected(allegiance) {
     var state = this.state;
     state.allegiance = allegiance;
+    this.setState(state);
+  }
+
+  factionChanged(faction) {
+    var state = this.state;
+    state.faction = faction;
     this.setState(state);
   }
 

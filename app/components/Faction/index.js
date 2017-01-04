@@ -14,11 +14,18 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
   constructor(props) {
     super(props);
 
+    this.state = {
+      faction: ""
+    }
+
     this.factionSelected = this.factionSelected.bind(this);
   }
 
-  factionSelected() {
-    //console.log(this.props.allegiance);
+  factionSelected(faction) {
+    var state = this.state;
+    state.faction = faction;
+    this.setState(state);
+    this.props.factionChanged(faction);
   }
 
   renderFactions() {

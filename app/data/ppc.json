@@ -1,0 +1,44 @@
+{
+    "aelves": [
+        {
+            "Eldritch Council": [
+                {
+                    "name": "Archmage on Dragon",
+                    "cost": 420,
+                    "type": "hero",
+                    "options": [
+                        [
+                            {
+                                "name": "Sorcerous Blade",
+                                "cost": 10
+                            },
+                            {
+                                "name": "Book of Hoeth",
+                                "cost": 25
+                            }
+                        ],
+                        {
+                            "name": "Talisman of Arcane Power",
+                            "cost": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Archmage",
+                    "cost": 90,
+                    "type": "hero",
+                    "options": [
+                        {
+                            "name": "Aelven Steed",
+                            "cost": 15
+                        },
+                        {
+                            "name": "Talisman of Arcane Power",
+                            "cost": 10
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
