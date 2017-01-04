@@ -72,6 +72,95 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
           </div>
         </div>
       );
+    } else if (this.props.allegiance === 'chaos') {
+      return (
+        <div className="ui middle aligned selection list">
+          <div className="item">
+            <div className="content">
+              <div className="header" onClick={() => this.factionSelected('herds_and_monsters')}>Herds & Monsters</div>
+            </div>
+          </div>
+          <div className="item">
+            <div className="content">
+              <div className="header" onClick={() => this.factionSelected('khorne')}>Khorne</div>
+            </div>
+          </div>
+          <div className="item">
+            <div className="content">
+              <div className="header" onClick={() => this.factionSelected('legion_of_azgorth')}>Legion of Azgorth</div>
+            </div>
+          </div>
+          <div className="item">
+            <div className="content">
+              <div className="header" onClick={() => this.factionSelected('nurgle')}>Nurgle</div>
+            </div>
+          </div>
+          <div className="item">
+            <div className="content">
+              <div className="header" onClick={() => this.factionSelected('skaven')}>Skaven</div>
+            </div>
+          </div>
+          <div className="item">
+            <div className="content">
+              <div className="header" onClick={() => this.factionSelected('slaneesh')}>Slaneesh</div>
+            </div>
+          </div>
+          <div className="item">
+            <div className="content">
+              <div className="header" onClick={() => this.factionSelected('tamurkhans_horde')}>Tamurkhan's Horde</div>
+            </div>
+          </div>
+          <div className="item">
+            <div className="content">
+              <div className="header" onClick={() => this.factionSelected('tzeentch')}>Tzeentch</div>
+            </div>
+          </div>
+          <div className="item">
+            <div className="content">
+              <div className="header" onClick={() => this.factionSelected('undivided')}>Undivided</div>
+            </div>
+          </div>
+        </div>
+      );
+    } else if (this.props.allegiance === 'death') {
+      return (
+        <div className="ui middle aligned selection list">
+          <div className="item">
+            <div className="content">
+              <div className="header" onClick={() => this.factionSelected('death')}>Death</div>
+            </div>
+          </div>
+          <div className="item">
+            <div className="content">
+              <div className="header" onClick={() => this.factionSelected('tomb_kings')}>Tomb Kings</div>
+            </div>
+          </div>
+        </div>
+      );
+    } else if (this.props.allegiance === 'destruction') {
+      return (
+        <div className="ui middle aligned selection list">
+          <div className="item">
+            <div className="content">
+              <div className="header" onClick={() => this.factionSelected('grots')}>Grots</div>
+            </div>
+          </div>
+          <div className="item">
+            <div className="content">
+              <div className="header" onClick={() => this.factionSelected('monsters_and_troggoths')}>Monsters & Troggoths</div>
+            </div>
+          </div>
+          <div className="item">
+            <div className="content">
+              <div className="header" onClick={() => this.factionSelected('ogors')}>Ogors</div>
+            </div>
+          </div>
+          <div className="item">
+            <div className="content">
+              <div className="header" onClick={() => this.factionSelected('orruks')}>Orruks</div>
+            </div>
+          </div>
+        </div>);
     } else {
       return (<div></div>);
     }
