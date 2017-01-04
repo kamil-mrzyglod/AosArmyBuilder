@@ -6,8 +6,20 @@
 import { defineMessages } from 'react-intl';
 
 export default defineMessages({
-  header: {
+  version: {
     id: 'app.components.PpcRulesheet.header',
-    defaultMessage: 'This is the PpcRulesheet component !',
+    defaultMessage: 'Select a version',
+  },
+  allegiance: {
+    id: 'app.components.PpcRulesheet.allegiance',
+    defaultMessage: 'Allegiance',
+  },
+  faction: {
+    id: 'app.components.PpcRulesheet.faction',
+    defaultMessage: 'Faction',
+  },
+  unit: {
+    id: 'app.components.PpcRulesheet.unit',
+    defaultMessage: 'Unit',
   },
 });
