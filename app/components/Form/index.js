@@ -46,9 +46,9 @@ class Form extends React.Component { // eslint-disable-line react/prefer-statele
   render() {
     return (
       <form className="ui form">
-        <h4 className="ui dividing header">
+        <h3 className="ui dividing header">
           <FormattedMessage {...messages.rulesheet} />
-        </h4>
+        </h3>
         <div className="field">
           <select className="ui fluid dropdown" onChange={this.rulesheetChange} defaultValue={this.state.rulesheet}>
             <option value="">--- Select ---</option>

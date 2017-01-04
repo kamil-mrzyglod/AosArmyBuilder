@@ -5,6 +5,7 @@
 */
 
 import React from 'react';
+import { Popup } from 'semantic-ui-react';
 
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
@@ -15,12 +16,10 @@ class FactionUnit extends React.Component { // eslint-disable-line react/prefer-
   constructor(props) {
     super(props);
 
-
-
     this.selectUnit = this.selectUnit.bind(this);
   }
 
-  renderUnits() {   
+  renderUnits() {
     if (this.props.faction === 'aelves') {
       return (
         <div className="ui middle aligned selection list">
@@ -42,7 +41,13 @@ class FactionUnit extends React.Component { // eslint-disable-line react/prefer-
       for (var i = 0; i <= units[unit].length - 1; i++) {
         unitNames.push(<div key={i} className="item">
           <div className="content">
-            <div className="header" onClick={this.selectUnit.bind(this, units[unit][i])}>{units[unit][i].name}</div>
+            <Popup trigger={<div className="header" onClick={this.selectUnit.bind(this, units[unit][i])}>{units[unit][i].name}</div>}>
+              <Popup.Header>{units[unit][i].name}</Popup.Header>
+              <Popup.Content>
+                <b>Type:</b> {units[unit][i].type}<br />
+                <b>Cost:</b> {units[unit][i].cost} pts<br />
+              </Popup.Content>
+            </Popup>           
           </div>
         </div>);
       }

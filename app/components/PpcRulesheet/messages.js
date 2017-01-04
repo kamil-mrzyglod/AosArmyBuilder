@@ -22,4 +22,8 @@ export default defineMessages({
     id: 'app.components.PpcRulesheet.unit',
     defaultMessage: 'Unit',
   },
+  selectedUnits: {
+    id: 'app.components.PpcRulesheet.selectedUnits',
+    defaultMessage: 'Your units',
+  }
 });

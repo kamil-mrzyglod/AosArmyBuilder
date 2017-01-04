@@ -10,6 +10,7 @@ import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 import Faction from '../Faction';
 import FactionUnit from '../FactionUnit';
+import SelectedUnits from '../SelectedUnits';
 
 class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
@@ -20,7 +21,8 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
       version: "",
       allegiance: "",
       faction: "",
-      units: []
+      units: [],
+      total: 0
     };
 
     this.versionChange = this.versionChange.bind(this);
@@ -105,15 +107,17 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
   unitSelected(unit) {
     var state = this.state;
     state.units.push(unit);
+    state.total += unit.cost;
+
     this.setState(state);
   }
 
   render() {
     return (
       <div>
-        <h4 className="ui dividing header">
+        <h3 className="ui dividing header">
           <FormattedMessage {...messages.version} />
-        </h4>
+        </h3>
         <div className="field">
           <select className="ui fluid dropdown" onChange={this.versionChange} defaultValue={this.state.version}>
             <option value="">--- Select ---</option>
@@ -121,6 +125,10 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
           </select>
         </div>
         {this.renderArmyOptions()}
+        <h3 className="ui dividing header">
+          <FormattedMessage {...messages.selectedUnits} /> ({this.state.total} pts)
+        </h3>
+        <SelectedUnits units={this.state.units} />
       </div>
     );
   }
