@@ -21,7 +21,8 @@
                             "name": "Talisman of Arcane Power",
                             "cost": 10
                         }
-                    ]
+                    ],
+                    "image": "http://www.games-workshop.com/resources/catalog/product/600x620/99120210011_LordonDragonNEW03.jpg"
                 },
                 {
                     "name": "Archmage",
@@ -36,19 +37,22 @@
                             "name": "Talisman of Arcane Power",
                             "cost": 10
                         }
-                    ]
+                    ],
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210009_HighElfMageNEW01.jpg"
                 },
                 {
                     "name": "Drakeseer",
                     "cost": 430,
                     "type": "hero",
-                    "options": []
+                    "options": [],
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210011_LordonDragonNEW01.jpg"
                 },
                 {
                     "name": "Loremaster",
                     "cost": 110,
                     "type": "hero",
-                    "options": []
+                    "options": [],
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99070210001_LoremasterHoeth01.jpg"
                 },
                 {
                     "name": "Swordmasters",
@@ -69,7 +73,8 @@
                         }
                     ],
                     "min": 5,
-                    "max": 30
+                    "max": 30,
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99810210006_SwordmastersofHoethNEW01.jpg"
                 }
             ]
         }
