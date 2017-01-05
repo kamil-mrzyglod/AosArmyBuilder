@@ -25,5 +25,13 @@ export default defineMessages({
   selectedUnits: {
     id: 'app.components.PpcRulesheet.selectedUnits',
     defaultMessage: 'Your units',
+  },
+  maximumNumberOfUnits: {
+    id: 'app.components.PpcRulesheet.maximumNumberOfUnits',
+    defaultMessage: 'You cannot add more units of this type.',
+  },
+  gotIt: {
+    id: 'app.components.PpcRulesheet.gotIt',
+    defaultMessage: 'Got it',
   }
 });

@@ -5,6 +5,8 @@
 */
 
 import React from 'react';
+import * as _ from 'lodash';
+import { Modal, Header, Button, Icon } from 'semantic-ui-react';
 
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
@@ -22,12 +24,14 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
       allegiance: "",
       faction: "",
       units: [],
-      total: 0
+      total: 0,
+      modalOpen: false
     };
 
     this.versionChange = this.versionChange.bind(this);
     this.renderArmyOptions = this.renderArmyOptions.bind(this);
     this.allegianceSelected = this.allegianceSelected.bind(this);
+    this.handleClose = this.handleClose.bind(this);
   }
 
   versionChange(e) {
@@ -106,9 +110,29 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
 
   unitSelected(unit) {
     var state = this.state;
+
+    if (unit.max !== 0) {
+      var dup = _.filter(this.state.units, (u) => {
+        return u.name === unit.name;
+      });
+     
+      if (dup.length === unit.max) {
+        // Cannot add this unit
+        state.modalOpen = true;
+        this.setState(state);
+        return;
+      }
+    }
+
     state.units.push(unit);
     state.total += unit.cost;
 
+    this.setState(state);
+  }
+
+  handleClose() {
+    var state = this.state;
+    state.modalOpen = false;
     this.setState(state);
   }
 
@@ -126,9 +150,25 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
         </div>
         {this.renderArmyOptions()}
         <h3 className="ui dividing header">
-          <FormattedMessage {...messages.selectedUnits} /> ({this.state.total} pts)
+          <FormattedMessage {...messages.selectedUnits} /> ({this.state.total}pts)
         </h3>
         <SelectedUnits units={this.state.units} />
+        <Modal
+          open={this.state.modalOpen}
+          onClose={this.handleClose}
+          basic
+          size='small'
+          >
+          <Header icon='warning sign' content='Maximum reached' />
+          <Modal.Content>
+            <h3><FormattedMessage {...messages.maximumNumberOfUnits} /></h3>
+          </Modal.Content>
+          <Modal.Actions>
+            <Button color='green' onClick={this.handleClose} inverted>
+              <Icon name='checkmark' /> <FormattedMessage {...messages.gotIt} />
+          </Button>
+          </Modal.Actions>
+        </Modal>
       </div>
     );
   }
