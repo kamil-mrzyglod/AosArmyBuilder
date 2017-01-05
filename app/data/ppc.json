@@ -53,20 +53,6 @@
                     ]
                 },
                 {
-                    "name": "Drakeseer",
-                    "cost": 430,
-                    "type": "Hero",
-                    "options": [],
-                    "max": 1,
-                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210011_LordonDragonNEW01.jpg",
-                    "melee": [
-                        {"name": "Dragon Lance", "range": 2, "stats": "3/3/3/-1/2"},
-                        {"name": "Dragon Blade", "range": 2, "stats": "4/4/4/-2/D3"},
-                        {"name": "Dragon's Claws", "range": 2, "stats": "6/4/3/-1/2"},
-                        {"name": "Dragon's Fearsome Jaws", "range": 2, "stats": "3/4/2/-2/D6"}
-                    ]
-                },
-                {
                     "name": "Loremaster",
                     "cost": 110,
                     "type": "Hero",
@@ -137,7 +123,7 @@
                     "max": 30,
                     "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210015_PhoenixGuardNEW01.jpg",
                     "melee": [
-                        {"name": "Phoenix Halberd", "range": 2, "stats": "2/3/3/-1/1"}
+                        {"name": "Phoenix Halberd", "range": 2, "stats": "2/3/3/0/1"}
                     ]
                 },
                 {
@@ -180,6 +166,88 @@
                     "melee": [
                         {"name": "Ice-hard Talons", "range": 2, "stats": "8/4/3/-1/2"},
                         {"name": "Great Phoenix Halberd", "range": 2, "stats": "4/3/3/-1/1"}
+                    ]
+                }
+            ],
+            "Lion Rangers": [
+                {
+                    "name": "White Lions",
+                    "cost": 14,
+                    "type": "Unit",
+                    "options": [
+                        {
+                            "name": "Guardian",
+                            "cost": 5
+                        },
+                        {
+                            "name": "Standard Bearer",
+                            "cost": 5
+                        },
+                        {
+                            "name": "Hornblower",
+                            "cost": 5
+                        }
+                    ],
+                    "min": 5,
+                    "max": 30,
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210016_WhiteLionsofChraceNEW01.jpg",
+                    "melee": [
+                        {"name": "Ranger Great Axe", "range": 2, "stats": "2/3/3/-1/1"}
+                    ]
+                },
+                {
+                    "name": "White Lion Chariots",
+                    "cost": 80,
+                    "type": "Unit",
+                    "options": [],
+                    "min": 1,
+                    "max": 3,
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210010_WhiteLionChariotNEW01.jpg",
+                    "melee": [
+                        {"name": "Ranger Great Axe", "range": 1, "stats": "4/3/3/-1/1"},
+                        {"name": "War Lions' Fangs and Claws", "range": 1, "stats": "4/4/3/0/1"}
+                    ]
+                }
+            ],
+            "Order Draconis": [
+                {
+                    "name": "Dragonlord",
+                    "cost": 430,
+                    "type": "Hero",
+                    "options": [],
+                    "max": 1,
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210011_LordonDragonNEW01.jpg",
+                    "melee": [
+                        {"name": "Dragon Lance", "range": 2, "stats": "3/3/3/-1/2"},
+                        {"name": "Dragon Blade", "range": 2, "stats": "4/4/4/-2/D3"},
+                        {"name": "Dragon's Claws", "range": 2, "stats": "6/4/3/-1/2"},
+                        {"name": "Dragon's Fearsome Jaws", "range": 2, "stats": "3/4/2/-2/D6"}
+                    ]
+                },
+                {
+                    "name": "Dragon Blades",
+                    "cost": 31,
+                    "type": "Unit",
+                    "options": [
+                        {
+                            "name": "Drakemaster",
+                            "cost": 5
+                        },
+                        {
+                            "name": "Standard Bearer",
+                            "cost": 5
+                        },
+                        {
+                            "name": "Hornblower",
+                            "cost": 5
+                        }
+                    ],
+                    "min": 5,
+                    "max": 20,
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210017_DragonPrincesofCaledorNEW01.jpg",
+                    "melee": [
+                        {"name": "Drake Lance and Sword", "range": 1, "stats": "2/3/4/0/1"},
+                        {"name": "Purebreed’s Ithilmar-shod Hooves", "range": 1, "stats": "2/4/4/0/1"}
                     ]
                 }
             ]
