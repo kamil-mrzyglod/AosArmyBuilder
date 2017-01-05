@@ -5,6 +5,7 @@
 */
 
 import React from 'react';
+import * as _ from 'lodash';
 
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
@@ -14,17 +15,18 @@ class SelectedUnits extends React.Component { // eslint-disable-line react/prefe
   renderUnits() {
     var elements = [];
 
-    for (var i = 0; i <= this.props.units.length - 1; i++) {
-      elements.push(<div key={i} className="item">
+    var units = _.groupBy(this.props.units, 'name');
+    _.forIn(units, (u, key) => {
+      elements.push(<div key={_.random(0, 100000)} className="item">
         <div className="right floated content">
           <div className="ui button">Remove</div>
         </div>
         <div className="content">
-          <div className="header">{this.props.units[i].name}</div>
-          {this.props.units[i].cost} pts
+          <div className="header">{u[0].name} ({u.length})</div>
+          {u[0].cost * u.length}pts
         </div>
       </div>);
-    }
+    })
 
     return (
       <div className="ui middle aligned divided list">{elements}</div>

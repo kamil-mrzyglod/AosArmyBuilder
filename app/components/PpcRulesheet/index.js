@@ -110,12 +110,11 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
 
   unitSelected(unit) {
     var state = this.state;
+    var dup = _.filter(this.state.units, (u) => {
+      return u.name === unit.name;
+    });
 
     if (unit.max !== 0) {
-      var dup = _.filter(this.state.units, (u) => {
-        return u.name === unit.name;
-      });
-     
       if (dup.length === unit.max) {
         // Cannot add this unit
         state.modalOpen = true;
@@ -124,9 +123,21 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
       }
     }
 
-    state.units.push(unit);
-    state.total += unit.cost;
+    if (dup.length === 0) {
+      if (typeof unit.min !== 'undefined') {
+        state.total += unit.cost * unit.min
 
+        for (var i = 0; i < unit.min - 1; i++) {
+          state.units.push(unit);
+        }
+      } else {
+        state.total += unit.cost;
+      }
+    } else {
+      state.total += unit.cost;
+    }
+
+    state.units.push(unit);
     this.setState(state);
   }
 
@@ -166,7 +177,7 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
           <Modal.Actions>
             <Button color='green' onClick={this.handleClose} inverted>
               <Icon name='checkmark' /> <FormattedMessage {...messages.gotIt} />
-          </Button>
+            </Button>
           </Modal.Actions>
         </Modal>
       </div>

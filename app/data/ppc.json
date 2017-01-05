@@ -58,7 +58,13 @@
                     "type": "Hero",
                     "options": [],
                     "max": 1,
-                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210011_LordonDragonNEW01.jpg"
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210011_LordonDragonNEW01.jpg",
+                    "melee": [
+                        {"name": "Dragon Lance", "range": 2, "stats": "3/3/3/-1/2"},
+                        {"name": "Dragon Blade", "range": 2, "stats": "4/4/4/-2/D3"},
+                        {"name": "Dragon's Claws", "range": 2, "stats": "6/4/3/-1/2"},
+                        {"name": "Dragon's Fearsome Jaws", "range": 2, "stats": "3/4/2/-2/D6"}
+                    ]
                 },
                 {
                     "name": "Loremaster",
@@ -66,7 +72,10 @@
                     "type": "Hero",
                     "options": [],
                     "max": 1,
-                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99070210001_LoremasterHoeth01.jpg"
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99070210001_LoremasterHoeth01.jpg",
+                    "melee": [
+                        {"name": "Greatsword", "range": 1, "stats": "2/3/3/-1/1"}
+                    ]
                 },
                 {
                     "name": "Swordmasters",
