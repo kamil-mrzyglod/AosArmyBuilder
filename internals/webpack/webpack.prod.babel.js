@@ -48,8 +48,8 @@ module.exports = require('./webpack.base.babel')({
     // Put it in the end to capture all the HtmlWebpackPlugin's
     // assets manipulations and do leak its manipulations to HtmlWebpackPlugin
     new OfflinePlugin({
-      relativePaths: true,
-      publicPath: '',
+      relativePaths: false,
+      publicPath: 'https://kamil-mrzyglod.github.io/AosArmyBuilder/',
 
       // No need to cache .htaccess. See http://mxs.is/googmp,
       // this is applied before any match in `caches` section
