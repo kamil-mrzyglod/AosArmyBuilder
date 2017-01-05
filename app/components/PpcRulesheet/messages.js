@@ -33,5 +33,9 @@ export default defineMessages({
   gotIt: {
     id: 'app.components.PpcRulesheet.gotIt',
     defaultMessage: 'Got it',
+  },
+  stats: {
+    id: 'app.components.PpcRulesheet.stats',
+    defaultMessage: 'Stats',
   }
 });

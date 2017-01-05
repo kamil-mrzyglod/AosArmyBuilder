@@ -22,8 +22,7 @@ class SelectedUnits extends React.Component { // eslint-disable-line react/prefe
           <div className="ui button">Remove</div>
         </div>
         <div className="content">
-          <div className="header">{u[0].name} ({u.length})</div>
-          {u[0].cost * u.length}pts
+          <div className="header">{u.length} {u[0].name} {u[0].cost * u.length}pts</div>
         </div>
       </div>);
     })

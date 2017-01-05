@@ -6,7 +6,7 @@
 
 import React from 'react';
 import * as _ from 'lodash';
-import { Modal, Header, Button, Icon } from 'semantic-ui-react';
+import { Modal, Header, Button, Icon, Progress } from 'semantic-ui-react';
 
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
@@ -32,6 +32,7 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
     this.renderArmyOptions = this.renderArmyOptions.bind(this);
     this.allegianceSelected = this.allegianceSelected.bind(this);
     this.handleClose = this.handleClose.bind(this);
+    this.getPercentage = this.getPercentage.bind(this);
   }
 
   versionChange(e) {
@@ -147,6 +148,18 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
     this.setState(state);
   }
 
+  getPercentage(type) {
+    var sum = 0;
+    _.map(this.state.units, (u) => {
+      if(u.type === type) {
+        sum += u.cost;
+      }
+    });
+
+    var result = sum / this.state.total;
+    return (result * 100).toFixed(0);
+  }
+
   render() {
     return (
       <div>
@@ -164,6 +177,12 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
           <FormattedMessage {...messages.selectedUnits} /> ({this.state.total}pts)
         </h3>
         <SelectedUnits units={this.state.units} />
+        <h3 className="ui dividing header">
+          <FormattedMessage {...messages.stats} />
+        </h3>
+        <Progress percent={this.getPercentage('Hero')} progress>Hero</Progress>
+        <Progress percent={this.getPercentage('Monster')} progress>Monsters</Progress>
+        <Progress percent={this.getPercentage('Unit')} progress>Core</Progress>
         <Modal
           open={this.state.modalOpen}
           onClose={this.handleClose}
