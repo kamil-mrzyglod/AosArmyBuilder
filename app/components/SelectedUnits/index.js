@@ -17,7 +17,7 @@ class SelectedUnits extends React.Component { // eslint-disable-line react/prefe
 
     var units = _.groupBy(this.props.units, 'name');
     _.forIn(units, (u, key) => {
-      elements.push(<div key={_.random(0, 100000)} className="item">
+      elements.push(<div key={key} className="item">
         <div className="right floated content">
           <div className="ui button">Remove</div>
         </div>

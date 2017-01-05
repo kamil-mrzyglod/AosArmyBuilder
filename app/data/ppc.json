@@ -99,7 +99,87 @@
                     "max": 30,
                     "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99810210006_SwordmastersofHoethNEW01.jpg",
                     "melee": [
-                        {"name": "Seerstaff", "range": 2, "stats": "2/3/3/-1/1"}
+                        {"name": "Seerstaff", "range": 1, "stats": "2/3/3/-1/1"}
+                    ]
+                }
+            ],
+            "Phoenix Temple": [
+                {
+                    "name": "Anointed",
+                    "cost": 100,
+                    "type": "Hero",
+                    "options": [],
+                    "max": 1,
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99800210001_CaradryanNEW01.jpg",
+                    "melee": [
+                        {"name": "Great Phoenix Halberd", "range": 2, "stats": "4/3/3/-1/1"}
+                    ]
+                },
+                {
+                    "name": "Phoenix Guards",
+                    "cost": 17,
+                    "type": "Unit",
+                    "options": [
+                        {
+                            "name": "Keeper of the Flame",
+                            "cost": 5
+                        },
+                        {
+                            "name": "Standard Bearer",
+                            "cost": 5
+                        },
+                        {
+                            "name": "Hornblower",
+                            "cost": 5
+                        }
+                    ],
+                    "min": 5,
+                    "max": 30,
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210015_PhoenixGuardNEW01.jpg",
+                    "melee": [
+                        {"name": "Phoenix Halberd", "range": 2, "stats": "2/3/3/-1/1"}
+                    ]
+                },
+                {
+                    "name": "Flamespyre Phoenix",
+                    "cost": 300,
+                    "type": "Monster",
+                    "options": [],
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210025_HEFlamespyrePhoenix03.jpg",
+                    "melee": [
+                        {"name": "Flaming Talons", "range": 2, "stats": "6/4/3/-1/2"}
+                    ]
+                },
+                {
+                    "name": "Flamespyre Phoenix + Anointed",
+                    "cost": 400,
+                    "type": "Hero",
+                    "options": [],
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210025_HEFlamespyrePhoenix01.jpg",
+                    "melee": [
+                        {"name": "Flaming Talons", "range": 2, "stats": "6/4/3/-1/2"},
+                        {"name": "Great Phoenix Halberd", "range": 2, "stats": "4/3/3/-1/1"}
+                    ]
+                },
+                {
+                    "name": "Frostheart Phoenix",
+                    "cost": 265,
+                    "type": "Monster",
+                    "options": [],
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210025_HEFrostheartPhoenix01.jpg",
+                    "melee": [
+                        {"name": "Ice-hard Talons", "range": 2, "stats": "8/4/3/-1/2"}
+                    ]
+                },
+                {
+                    "name": "Frostheart Phoenix + Anointed",
+                    "cost": 365,
+                    "type": "Hero",
+                    "options": [],
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210025_HEFrostheartPhoenix01.jpg",
+                    "melee": [
+                        {"name": "Ice-hard Talons", "range": 2, "stats": "8/4/3/-1/2"},
+                        {"name": "Great Phoenix Halberd", "range": 2, "stats": "4/3/3/-1/1"}
                     ]
                 }
             ]

@@ -40,7 +40,7 @@ class FactionUnit extends React.Component { // eslint-disable-line react/prefer-
 
     for (var unit in units) {
       for (var i = 0; i <= units[unit].length - 1; i++) {
-        unitNames.push(<div key={i} className="item">
+        unitNames.push(<div key={units[unit][i].name} className="item">
           <div className="content">
             <Popup trigger={<div className="header" onClick={this.selectUnit.bind(this, units[unit][i])}>{units[unit][i].name}</div>}>
               <Popup.Content>
