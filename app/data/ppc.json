@@ -23,7 +23,13 @@
                         }
                     ],
                     "max": 1,
-                    "image": "http://www.games-workshop.com/resources/catalog/product/600x620/99120210011_LordonDragonNEW03.jpg"
+                    "image": "http://www.games-workshop.com/resources/catalog/product/600x620/99120210011_LordonDragonNEW03.jpg",
+                    "melee": [
+                        {"name": "Magestaff", "range": 2, "stats": "1/4/3/-1/D3"},
+                        {"name": "Sorcerous Blade", "range": 1, "stats": "3/4/4/0/1", "option": 0},
+                        {"name": "Dragon's Claws", "range": 2, "stats": "6/4/3/-1/2"},
+                        {"name": "Dragon's Fearsome Jaws", "range": 2, "stats": "3/4/2/-2/D6"}
+                    ]
                 },
                 {
                     "name": "Archmage",
@@ -40,7 +46,11 @@
                         }
                     ],
                     "max": 0,
-                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210009_HighElfMageNEW01.jpg"
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210009_HighElfMageNEW01.jpg",
+                    "melee": [
+                        {"name": "Seerstaff", "range": 2, "stats": "1/4/3/-1/1"},
+                        {"name": "Aelven Steed Swift Hooves", "range": 1, "stats": "2/4/5/0/1", "option": 0}
+                    ]
                 },
                 {
                     "name": "Drakeseer",
@@ -78,7 +88,10 @@
                     ],
                     "min": 5,
                     "max": 30,
-                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99810210006_SwordmastersofHoethNEW01.jpg"
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99810210006_SwordmastersofHoethNEW01.jpg",
+                    "melee": [
+                        {"name": "Seerstaff", "range": 2, "stats": "2/3/3/-1/1"}
+                    ]
                 }
             ]
         }

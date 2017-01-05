@@ -17,6 +17,7 @@ class FactionUnit extends React.Component { // eslint-disable-line react/prefer-
     super(props);
 
     this.selectUnit = this.selectUnit.bind(this);
+    this.calculateAvgDamage = this.calculateAvgDamage.bind(this);
   }
 
   renderUnits() {
@@ -52,6 +53,7 @@ class FactionUnit extends React.Component { // eslint-disable-line react/prefer-
                     <Card.Description>
                       <b>Type:</b> {units[unit][i].type}<br />
                       <b>Cost:</b> {units[unit][i].cost}pts<br />
+                      <b>Avg. damage:</b> {this.calculateAvgDamage(units[unit][i])} dmg / turn
                     </Card.Description>
                   </Card.Content>
                 </Card>
@@ -63,6 +65,26 @@ class FactionUnit extends React.Component { // eslint-disable-line react/prefer-
     }
 
     return unitNames;
+  }
+
+  calculateAvgDamage(unit) {
+    var avgDmg = 0;
+    _.map(unit.melee, (weapon) => {
+      var stats = weapon.stats.split('/'); // Attacks/H/W/R/Dmg
+      var dmg = stats[4];
+
+      if(stats[4].startsWith('D3')) {
+        dmg = 2;
+      } else if(stats[4].startsWith('D6')) {
+        dmg = 3.5;
+      } else {
+        dmg = parseInt(stats[4]);
+      }
+      
+      avgDmg += parseInt(stats[0]) * ((6-parseInt(stats[1])+1)/6) * ((6-parseInt(stats[2])+1)/6) * dmg;
+    });
+
+    return avgDmg.toFixed(2);
   }
 
   selectUnit(unit) {
