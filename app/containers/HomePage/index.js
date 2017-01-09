@@ -16,7 +16,7 @@ import messages from './messages';
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div className="ui raised very padded text container segment">
+      <div className="ui container segment">
         <Form />
       </div>
     );
