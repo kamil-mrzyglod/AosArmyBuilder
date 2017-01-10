@@ -53,45 +53,56 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
   renderArmyOptions() {
     if (this.state.version !== '') {
       return (
-        <div className="three fields">
-          <div className="field">
-            <label>
-              <FormattedMessage {...messages.allegiance} />
-            </label>
-            <div className="ui middle aligned selection list">
-              <div className="item">
-                <div className="content">
-                  <div className="header" onClick={() => this.allegianceSelected('order')}>Order</div>
+        <div>
+          <div className="ui four stackable cards">
+            <div className="blue card" onClick={() => this.allegianceSelected('order')}>
+              <div className="content">
+                <div className="header">Order</div>
+                <div className="meta">
+                  <span className="category">Animals</span>
+                </div>
+                <div className="description">
+                  <p></p>
                 </div>
               </div>
-              <div className="item">
-                <div className="content">
-                  <div className="header" onClick={() => this.allegianceSelected('chaos')}>Chaos</div>
+            </div>
+            <div className="red card" onClick={() => this.allegianceSelected('chaos')}>
+              <div className="content">
+                <div className="header">Chaos</div>
+                <div className="meta">
+                  <span className="category">Animals</span>
+                </div>
+                <div className="description">
+                  <p></p>
                 </div>
               </div>
-              <div className="item">
-                <div className="content">
-                  <div className="header" onClick={() => this.allegianceSelected('death')}>Death</div>
+            </div>
+            <div className="black card" onClick={() => this.allegianceSelected('death')}>
+              <div className="content">
+                <div className="header">Death</div>
+                <div className="meta">
+                  <span className="category">Animals</span>
+                </div>
+                <div className="description">
+                  <p></p>
                 </div>
               </div>
-              <div className="item">
-                <div className="content">
-                  <div className="header" onClick={() => this.allegianceSelected('destruction')}>Destruction</div>
+            </div>
+            <div className="green card" onClick={() => this.allegianceSelected('destruction')}>
+              <div className="content">
+                <div className="header">Destruction</div>
+                <div className="meta">
+                  <span className="category">Animals</span>
+                </div>
+                <div className="description">
+                  <p></p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="field">
-            <label>
-              <FormattedMessage {...messages.faction} />
-            </label>
             <Faction allegiance={this.state.allegiance} factionChanged={this.factionChanged.bind(this)} />
-          </div>
-          <div className="field">
-            <label>
-              <FormattedMessage {...messages.unit} />
-              <FactionUnit faction={this.state.faction} unitSelected={this.unitSelected.bind(this)} />
-            </label>
+          <div className="ui four stackable cards">
+            <FactionUnit faction={this.state.faction} unitSelected={this.unitSelected.bind(this)} />
           </div>
         </div>
       );
@@ -152,7 +163,7 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
   getPercentage(type) {
     var sum = 0;
     _.map(this.state.units, (u) => {
-      if(u.type === type) {
+      if (u.type === type) {
         sum += u.cost;
       }
     });
@@ -164,7 +175,7 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
   unitRemoved(key) {
     var state = this.state;
     var units = this.state.units;
-    
+
     _.remove(units, (u) => {
       return u.name === key;
     });

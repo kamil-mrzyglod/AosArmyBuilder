@@ -31,100 +31,208 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
   renderFactions() {
     if (this.props.allegiance === 'order') {
       return (
-        <div className="ui middle aligned selection list">
-          <div className="item">
+        <div className="ui six stackable cards">
+          <div className="blue card" onClick={() => this.factionSelected('aelves')}>
             <div className="content">
-              <div className="header" onClick={() => this.factionSelected('aelves')}>Aelves</div>
+              <div className="header">Aelves</div>
+              <div className="meta">
+                <span className="category">Animals</span>
+              </div>
+              <div className="description">
+                <p></p>
+              </div>
             </div>
           </div>
-          <div className="item">
+          <div className="blue card" onClick={() => this.factionSelected('aelves_legacy')}>
             <div className="content">
-              <div className="header" onClick={() => this.factionSelected('aelves_legacy')}>Aelves Legacy</div>
+              <div className="header">Aelves Legacy</div>
+              <div className="meta">
+                <span className="category">Animals</span>
+              </div>
+              <div className="description">
+                <p></p>
+              </div>
             </div>
           </div>
-          <div className="item">
+          <div className="blue card" onClick={() => this.factionSelected('brettonia')}>
             <div className="content">
-              <div className="header" onClick={() => this.factionSelected('brettonia')}>Brettonia</div>
+              <div className="header">Brettonia</div>
+              <div className="meta">
+                <span className="category">Animals</span>
+              </div>
+              <div className="description">
+                <p></p>
+              </div>
             </div>
           </div>
-          <div className="item">
+          <div className="blue card" onClick={() => this.factionSelected('duardin')}>
             <div className="content">
-              <div className="header" onClick={() => this.factionSelected('duardin')}>Duardin</div>
+              <div className="header">Duardin</div>
+              <div className="meta">
+                <span className="category">Animals</span>
+              </div>
+              <div className="description">
+                <p></p>
+              </div>
             </div>
           </div>
-          <div className="item">
+          <div className="blue card" onClick={() => this.factionSelected('fyreslayers')}>
             <div className="content">
-              <div className="header" onClick={() => this.factionSelected('fyreslayers')}>Fyreslayers</div>
+              <div className="header">Fyreslayers</div>
+              <div className="meta">
+                <span className="category">Animals</span>
+              </div>
+              <div className="description">
+                <p></p>
+              </div>
             </div>
           </div>
-          <div className="item">
+          <div className="blue card" onClick={() => this.factionSelected('humans')}>
             <div className="content">
-              <div className="header" onClick={() => this.factionSelected('humans')}>Humans</div>
+              <div className="header">Humans</div>
+              <div className="meta">
+                <span className="category">Animals</span>
+              </div>
+              <div className="description">
+                <p></p>
+              </div>
             </div>
           </div>
-          <div className="item">
+          <div className="blue card" onClick={() => this.factionSelected('seraphon')}>
             <div className="content">
-              <div className="header" onClick={() => this.factionSelected('seraphon')}>Seraphon</div>
+              <div className="header">Seraphon</div>
+              <div className="meta">
+                <span className="category">Animals</span>
+              </div>
+              <div className="description">
+                <p></p>
+              </div>
             </div>
           </div>
-          <div className="item">
+          <div className="blue card" onClick={() => this.factionSelected('stormcast')}>
             <div className="content">
-              <div className="header" onClick={() => this.factionSelected('stormcast')}>Stormcast</div>
+              <div className="header">Stormcast</div>
+              <div className="meta">
+                <span className="category">Animals</span>
+              </div>
+              <div className="description">
+                <p></p>
+              </div>
             </div>
           </div>
-          <div className="item">
+          <div className="blue card" onClick={() => this.factionSelected('sylvaneth')}>
             <div className="content">
-              <div className="header" onClick={() => this.factionSelected('sylvaneth')}>Sylvaneth</div>
+              <div className="header">Sylvaneth</div>
+              <div className="meta">
+                <span className="category">Animals</span>
+              </div>
+              <div className="description">
+                <p></p>
+              </div>
             </div>
           </div>
         </div>
       );
     } else if (this.props.allegiance === 'chaos') {
       return (
-        <div className="ui middle aligned selection list">
-          <div className="item">
+        <div className="ui six stackable cards">
+          <div className="red card" onClick={() => this.factionSelected('herds_and_monsters')}>
             <div className="content">
-              <div className="header" onClick={() => this.factionSelected('herds_and_monsters')}>Herds & Monsters</div>
+              <div className="header">Herds & Monsters</div>
+              <div className="meta">
+                <span className="category">Animals</span>
+              </div>
+              <div className="description">
+                <p></p>
+              </div>
             </div>
           </div>
-          <div className="item">
+          <div className="red card" onClick={() => this.factionSelected('khorne')}>
             <div className="content">
-              <div className="header" onClick={() => this.factionSelected('khorne')}>Khorne</div>
+              <div className="header">Khorne</div>
+              <div className="meta">
+                <span className="category">Animals</span>
+              </div>
+              <div className="description">
+                <p></p>
+              </div>
             </div>
           </div>
-          <div className="item">
+          <div className="red card" onClick={() => this.factionSelected('legion_of_azgorth')}>
             <div className="content">
-              <div className="header" onClick={() => this.factionSelected('legion_of_azgorth')}>Legion of Azgorth</div>
+              <div className="header">Legion of Azgorth</div>
+              <div className="meta">
+                <span className="category">Animals</span>
+              </div>
+              <div className="description">
+                <p></p>
+              </div>
             </div>
           </div>
-          <div className="item">
+          <div className="red card" onClick={() => this.factionSelected('nurgle')}>
             <div className="content">
-              <div className="header" onClick={() => this.factionSelected('nurgle')}>Nurgle</div>
+              <div className="header">Nurgle</div>
+              <div className="meta">
+                <span className="category">Animals</span>
+              </div>
+              <div className="description">
+                <p></p>
+              </div>
             </div>
           </div>
-          <div className="item">
+          <div className="red card" onClick={() => this.factionSelected('skaven')}>
             <div className="content">
-              <div className="header" onClick={() => this.factionSelected('skaven')}>Skaven</div>
+              <div className="header">Skaven</div>
+              <div className="meta">
+                <span className="category">Animals</span>
+              </div>
+              <div className="description">
+                <p></p>
+              </div>
             </div>
           </div>
-          <div className="item">
+          <div className="red card" onClick={() => this.factionSelected('slaneesh')}>
             <div className="content">
-              <div className="header" onClick={() => this.factionSelected('slaneesh')}>Slaneesh</div>
+              <div className="header">Slaneesh</div>
+              <div className="meta">
+                <span className="category">Animals</span>
+              </div>
+              <div className="description">
+                <p></p>
+              </div>
             </div>
           </div>
-          <div className="item">
+          <div className="red card" onClick={() => this.factionSelected('tamurkhans_horde')}>
             <div className="content">
-              <div className="header" onClick={() => this.factionSelected('tamurkhans_horde')}>Tamurkhan's Horde</div>
+              <div className="header">Tamurkhan's Horde</div>
+              <div className="meta">
+                <span className="category">Animals</span>
+              </div>
+              <div className="description">
+                <p></p>
+              </div>
             </div>
           </div>
-          <div className="item">
+          <div className="red card" onClick={() => this.factionSelected('tzeentch')}>
             <div className="content">
-              <div className="header" onClick={() => this.factionSelected('tzeentch')}>Tzeentch</div>
+              <div className="header">Tzeentch</div>
+              <div className="meta">
+                <span className="category">Animals</span>
+              </div>
+              <div className="description">
+                <p></p>
+              </div>
             </div>
           </div>
-          <div className="item">
+          <div className="red card" onClick={() => this.factionSelected('undivided')}>
             <div className="content">
-              <div className="header" onClick={() => this.factionSelected('undivided')}>Undivided</div>
+              <div className="header">Undivided</div>
+              <div className="meta">
+                <span className="category">Animals</span>
+              </div>
+              <div className="description">
+                <p></p>
+              </div>
             </div>
           </div>
         </div>
