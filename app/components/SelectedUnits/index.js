@@ -14,6 +14,12 @@ import WeaponEfficiency from '../WeaponEfficiency';
 
 class SelectedUnits extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
+  constructor(props) {
+    super(props);
+
+    this.removeUnit = this.removeUnit.bind(this);
+  }
+
   renderUnits() {
     var elements = [];
 
@@ -21,13 +27,13 @@ class SelectedUnits extends React.Component { // eslint-disable-line react/prefe
     _.forIn(units, (u, key) => {
       elements.push(<div key={key} className="item">
         <div className="right floated content">
-          <div className="ui button">Remove</div>
+          <div className="ui button" onClick={this.removeUnit.bind(this, key)}>Remove</div>
         </div>
         <div className="content">
           <div className="header">{u.length} {u[0].name} {u[0].cost * u.length}pts</div>
           <hr />
           <b>Type:</b> {u[0].type}<br />
-    <b>Avg. damage:</b> {calculateAvgDamage(u[0]) * u.length}dmg / turn({calculateAvgDamage(u[0])}dmg per model)<br />
+          <b>Avg. damage:</b> {calculateAvgDamage(u[0]) * u.length}dmg / turn({calculateAvgDamage(u[0])}dmg per model)<br />
           <b>Max. damage:</b> {calculateMaxDamage(u[0]) * u.length}dmg / turn({calculateMaxDamage(u[0])}dmg per model)
           <div className="ui small header center aligned">Weapon Efficiency</div>
           <WeaponEfficiency unit={u[0]} />
@@ -39,6 +45,10 @@ class SelectedUnits extends React.Component { // eslint-disable-line react/prefe
     return (
       <div className="ui middle aligned list">{elements}</div>
     );
+  }
+
+  removeUnit(key) {
+    this.props.unitRemoved(key);
   }
 
   render() {

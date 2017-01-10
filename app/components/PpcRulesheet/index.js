@@ -33,6 +33,7 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
     this.allegianceSelected = this.allegianceSelected.bind(this);
     this.handleClose = this.handleClose.bind(this);
     this.getPercentage = this.getPercentage.bind(this);
+    this.unitRemoved = this.unitRemoved.bind(this);
   }
 
   versionChange(e) {
@@ -160,6 +161,18 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
     return (result * 100).toFixed(0);
   }
 
+  unitRemoved(key) {
+    var state = this.state;
+    var units = this.state.units;
+    
+    _.remove(units, (u) => {
+      return u.name === key;
+    });
+
+    state.units = units;
+    this.setState(state);
+  }
+
   render() {
     return (
       <div>
@@ -176,7 +189,7 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
         <h3 className="ui dividing header">
           <FormattedMessage {...messages.selectedUnits} /> ({this.state.total}pts)
         </h3>
-        <SelectedUnits units={this.state.units} />
+        <SelectedUnits units={this.state.units} unitRemoved={this.unitRemoved.bind(this)} />
         <h3 className="ui dividing header">
           <FormattedMessage {...messages.stats} />
         </h3>
