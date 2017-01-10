@@ -25,10 +25,27 @@
                     "max": 1,
                     "image": "http://www.games-workshop.com/resources/catalog/product/600x620/99120210011_LordonDragonNEW03.jpg",
                     "melee": [
-                        {"name": "Magestaff", "range": 2, "stats": "1/4/3/-1/D3"},
-                        {"name": "Sorcerous Blade", "range": 1, "stats": "3/4/4/0/1", "option": 0},
-                        {"name": "Dragon's Claws", "range": 2, "stats": "6/4/3/-1/2"},
-                        {"name": "Dragon's Fearsome Jaws", "range": 2, "stats": "3/4/2/-2/D6"}
+                        {
+                            "name": "Magestaff",
+                            "range": 2,
+                            "stats": "1/4/3/-1/D3"
+                        },
+                        {
+                            "name": "Sorcerous Blade",
+                            "range": 1,
+                            "stats": "3/4/4/0/1",
+                            "option": 0
+                        },
+                        {
+                            "name": "Dragon's Claws",
+                            "range": 2,
+                            "stats": "6/4/3/-1/2"
+                        },
+                        {
+                            "name": "Dragon's Fearsome Jaws",
+                            "range": 2,
+                            "stats": "3/4/2/-2/D6"
+                        }
                     ]
                 },
                 {
@@ -48,8 +65,17 @@
                     "max": 0,
                     "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210009_HighElfMageNEW01.jpg",
                     "melee": [
-                        {"name": "Seerstaff", "range": 2, "stats": "1/4/3/-1/1"},
-                        {"name": "Aelven Steed Swift Hooves", "range": 1, "stats": "2/4/5/0/1", "option": 0}
+                        {
+                            "name": "Seerstaff",
+                            "range": 2,
+                            "stats": "1/4/3/-1/1"
+                        },
+                        {
+                            "name": "Aelven Steed Swift Hooves",
+                            "range": 1,
+                            "stats": "2/4/5/0/1",
+                            "option": 0
+                        }
                     ]
                 },
                 {
@@ -60,7 +86,11 @@
                     "max": 1,
                     "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99070210001_LoremasterHoeth01.jpg",
                     "melee": [
-                        {"name": "Greatsword", "range": 1, "stats": "2/3/3/-1/1"}
+                        {
+                            "name": "Greatsword",
+                            "range": 1,
+                            "stats": "2/3/3/-1/1"
+                        }
                     ]
                 },
                 {
@@ -85,7 +115,11 @@
                     "max": 30,
                     "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99810210006_SwordmastersofHoethNEW01.jpg",
                     "melee": [
-                        {"name": "Seerstaff", "range": 1, "stats": "2/3/3/-1/1"}
+                        {
+                            "name": "Seerstaff",
+                            "range": 1,
+                            "stats": "2/3/3/-1/1"
+                        }
                     ]
                 }
             ],
@@ -98,7 +132,11 @@
                     "max": 1,
                     "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99800210001_CaradryanNEW01.jpg",
                     "melee": [
-                        {"name": "Great Phoenix Halberd", "range": 2, "stats": "4/3/3/-1/1"}
+                        {
+                            "name": "Great Phoenix Halberd",
+                            "range": 2,
+                            "stats": "4/3/3/-1/1"
+                        }
                     ]
                 },
                 {
@@ -123,7 +161,11 @@
                     "max": 30,
                     "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210015_PhoenixGuardNEW01.jpg",
                     "melee": [
-                        {"name": "Phoenix Halberd", "range": 2, "stats": "2/3/3/0/1"}
+                        {
+                            "name": "Phoenix Halberd",
+                            "range": 2,
+                            "stats": "2/3/3/0/1"
+                        }
                     ]
                 },
                 {
@@ -133,7 +175,11 @@
                     "options": [],
                     "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210025_HEFlamespyrePhoenix03.jpg",
                     "melee": [
-                        {"name": "Flaming Talons", "range": 2, "stats": "6/4/3/-1/2"}
+                        {
+                            "name": "Flaming Talons",
+                            "range": 2,
+                            "stats": "6/4/3/-1/2"
+                        }
                     ]
                 },
                 {
@@ -143,8 +189,16 @@
                     "options": [],
                     "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210025_HEFlamespyrePhoenix01.jpg",
                     "melee": [
-                        {"name": "Flaming Talons", "range": 2, "stats": "6/4/3/-1/2"},
-                        {"name": "Great Phoenix Halberd", "range": 2, "stats": "4/3/3/-1/1"}
+                        {
+                            "name": "Flaming Talons",
+                            "range": 2,
+                            "stats": "6/4/3/-1/2"
+                        },
+                        {
+                            "name": "Great Phoenix Halberd",
+                            "range": 2,
+                            "stats": "4/3/3/-1/1"
+                        }
                     ]
                 },
                 {
@@ -154,7 +208,11 @@
                     "options": [],
                     "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210025_HEFrostheartPhoenix01.jpg",
                     "melee": [
-                        {"name": "Ice-hard Talons", "range": 2, "stats": "8/4/3/-1/2"}
+                        {
+                            "name": "Ice-hard Talons",
+                            "range": 2,
+                            "stats": "8/4/3/-1/2"
+                        }
                     ]
                 },
                 {
@@ -164,8 +222,16 @@
                     "options": [],
                     "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210025_HEFrostheartPhoenix01.jpg",
                     "melee": [
-                        {"name": "Ice-hard Talons", "range": 2, "stats": "8/4/3/-1/2"},
-                        {"name": "Great Phoenix Halberd", "range": 2, "stats": "4/3/3/-1/1"}
+                        {
+                            "name": "Ice-hard Talons",
+                            "range": 2,
+                            "stats": "8/4/3/-1/2"
+                        },
+                        {
+                            "name": "Great Phoenix Halberd",
+                            "range": 2,
+                            "stats": "4/3/3/-1/1"
+                        }
                     ]
                 }
             ],
@@ -192,7 +258,11 @@
                     "max": 30,
                     "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210016_WhiteLionsofChraceNEW01.jpg",
                     "melee": [
-                        {"name": "Ranger Great Axe", "range": 2, "stats": "2/3/3/-1/1"}
+                        {
+                            "name": "Ranger Great Axe",
+                            "range": 2,
+                            "stats": "2/3/3/-1/1"
+                        }
                     ]
                 },
                 {
@@ -204,8 +274,16 @@
                     "max": 3,
                     "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210010_WhiteLionChariotNEW01.jpg",
                     "melee": [
-                        {"name": "Ranger Great Axe", "range": 1, "stats": "4/3/3/-1/1"},
-                        {"name": "War Lions' Fangs and Claws", "range": 1, "stats": "4/4/3/0/1"}
+                        {
+                            "name": "Ranger Great Axe",
+                            "range": 1,
+                            "stats": "4/3/3/-1/1"
+                        },
+                        {
+                            "name": "War Lions' Fangs and Claws",
+                            "range": 1,
+                            "stats": "4/4/3/0/1"
+                        }
                     ]
                 }
             ],
@@ -218,10 +296,26 @@
                     "max": 1,
                     "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210011_LordonDragonNEW01.jpg",
                     "melee": [
-                        {"name": "Dragon Lance", "range": 2, "stats": "3/3/3/-1/2"},
-                        {"name": "Dragon Blade", "range": 2, "stats": "4/4/4/-2/D3"},
-                        {"name": "Dragon's Claws", "range": 2, "stats": "6/4/3/-1/2"},
-                        {"name": "Dragon's Fearsome Jaws", "range": 2, "stats": "3/4/2/-2/D6"}
+                        {
+                            "name": "Dragon Lance",
+                            "range": 2,
+                            "stats": "3/3/3/-1/2"
+                        },
+                        {
+                            "name": "Dragon Blade",
+                            "range": 2,
+                            "stats": "4/4/4/-2/D3"
+                        },
+                        {
+                            "name": "Dragon's Claws",
+                            "range": 2,
+                            "stats": "6/4/3/-1/2"
+                        },
+                        {
+                            "name": "Dragon's Fearsome Jaws",
+                            "range": 2,
+                            "stats": "3/4/2/-2/D6"
+                        }
                     ]
                 },
                 {
@@ -246,8 +340,221 @@
                     "max": 20,
                     "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120210017_DragonPrincesofCaledorNEW01.jpg",
                     "melee": [
-                        {"name": "Drake Lance and Sword", "range": 1, "stats": "2/3/4/0/1"},
-                        {"name": "Purebreed’s Ithilmar-shod Hooves", "range": 1, "stats": "2/4/4/0/1"}
+                        {
+                            "name": "Drake Lance and Sword",
+                            "range": 1,
+                            "stats": "2/3/4/0/1"
+                        },
+                        {
+                            "name": "Purebreed’s Ithilmar-shod Hooves",
+                            "range": 1,
+                            "stats": "2/4/4/0/1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "nurgle": [
+        {
+            "Nurgle Rotbringers": [
+                {
+                    "name": "The Glottkin",
+                    "cost": 725,
+                    "type": "Hero",
+                    "options": [],
+                    "max": 1,
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120201040_TheGlottkin01.jpg",
+                    "melee": [
+                        {
+                            "name": "Ghurk's Flailing Tentacle",
+                            "range": 3,
+                            "stats": "6/4/2/-2/2"
+                        },
+                        {
+                            "name": "Ghurk's Lamprey Maw",
+                            "range": 2,
+                            "stats": "1/3/2/-1/D3"
+                        },
+                        {
+                            "name": "Otto's Poison-slick Scythe",
+                            "range": 2,
+                            "stats": "3/3/3/-1/D3"
+                        }
+                    ]
+                },
+                {
+                    "name": "Bloab Rotspawned",
+                    "cost": 300,
+                    "type": "Hero",
+                    "options": [],
+                    "max": 1,
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120201038_BlaobRotSpawn01.jpg",
+                    "melee": [
+                        {
+                            "name": "Harvestman's Scythe",
+                            "range": 2,
+                            "stats": "3/3/3/-1/2"
+                        },
+                        {
+                            "name": "Bilespurter's Monstrous Claws",
+                            "range": 3,
+                            "stats": "5/4/2/-1/1"
+                        }
+                    ]
+                },
+                {
+                    "name": "Morbidex Twiceborn",
+                    "cost": 330,
+                    "type": "Hero",
+                    "options": [],
+                    "max": 1,
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120201038_MorbidexTwiceBorn01.jpg",
+                    "melee": [
+                        {
+                            "name": "Fleshreaper Scythe",
+                            "range": 2,
+                            "stats": "5/3/3/-1/2"
+                        },
+                        {
+                            "name": "Bilespurter's Monstrous Claws",
+                            "range": 3,
+                            "stats": "5/4/2/-1/1"
+                        }
+                    ]
+                },
+                {
+                    "name": "Orghotts Daemonspew",
+                    "cost": 240,
+                    "type": "Hero",
+                    "options": [],
+                    "max": 1,
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120201038_OrghottsDaemonSpew01.jpg",
+                    "melee": [
+                        {
+                            "name": "The Rotaxes",
+                            "range": 2,
+                            "stats": "5/3/3/-1/1"
+                        },
+                        {
+                            "name": "Whippermaw’s Monstrous Claws",
+                            "range": 3,
+                            "stats": "5/4/2/-1/1"
+                        }
+                    ]
+                },
+                {
+                    "name": "Gutrot Spume",
+                    "cost": 145,
+                    "type": "Hero",
+                    "options": [],
+                    "max": 1,
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99070201008_GutrotSprume01.jpg",
+                    "melee": [
+                        {
+                            "name": "Rot-pocked Axe",
+                            "range": 2,
+                            "stats": "4/3/2/-1/2"
+                        },
+                        {
+                            "name": "Flailing Tentacles",
+                            "range": 1,
+                            "stats": "D3/2/4/0/1"
+                        }
+                    ]
+                },
+                {
+                    "name": "Festus the Leechlord",
+                    "cost": 120,
+                    "type": "Hero",
+                    "options": [],
+                    "max": 1,
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99800201025_FestusLeechlord01.jpg",
+                    "melee": [
+                        {
+                            "name": "Plague Staff",
+                            "range": 1,
+                            "stats": "2/4/3/0/D3"
+                        }
+                    ]
+                },
+                {
+                    "name": "Lord of Plagues",
+                    "cost": 100,
+                    "type": "Hero",
+                    "options": [],
+                    "max": 1,
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99070201009_LordofPlagues01.jpg",
+                    "melee": [
+                        {
+                            "name": "Plague-ridden Great Blade",
+                            "range": 1,
+                            "stats": "3/3/3/-1/D3"
+                        }
+                    ]
+                },
+                {
+                    "name": "Harbinger of Decay",
+                    "cost": 130,
+                    "type": "Hero",
+                    "options": [],
+                    "max": 1,
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99800201026_MountedNurgleLord01.jpg",
+                    "melee": [
+                        {
+                            "name": "Plague Scythe",
+                            "range": 1,
+                            "stats": "3/3/2/-1/D3"
+                        },
+                        {
+                            "name": "Daemonic Mount's Flyblown Bite",
+                            "range": 1,
+                            "stats": "D6/4/4/0/1"
+                        }
+                    ]
+                },
+                {
+                    "name": "Rotbringers Sorcerer",
+                    "cost": 110,
+                    "type": "Hero",
+                    "options": [],
+                    "max": 0,
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99800201024_NurgleSorcerer01.jpg",
+                    "melee": [
+                        {
+                            "name": "Rotwood Staff",
+                            "range": 1,
+                            "stats": "1/4/3/-1/D3"
+                        }
+                    ]
+                },
+                {
+                    "name": "Putrid Blightkings",
+                    "cost": 40,
+                    "type": "Unit",
+                    "options": [
+                        {
+                            "name": "Blightlord",
+                            "cost": 5
+                        },
+                        {
+                            "name": "Icon Bearer",
+                            "cost": 5
+                        },
+                        {
+                            "name": "Sonorous Tocsin",
+                            "cost": 5
+                        }
+                    ],
+                    "min": 5,
+                    "max": 20,
+                    "image": "https://www.games-workshop.com/resources/catalog/product/600x620/99120201041_Blightkings01.jpg",
+                    "melee": [
+                        {
+                            "name": "Blighted Weapon",
+                            "range": 1,
+                            "stats": "3/3/3/0/1"
+                        }
                     ]
                 }
             ]

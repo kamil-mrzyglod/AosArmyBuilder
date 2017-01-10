@@ -21,7 +21,7 @@ class FactionUnit extends React.Component { // eslint-disable-line react/prefer-
   }
 
   renderUnits() {
-    if (this.props.faction === 'aelves') {
+    if (this.props.faction === 'aelves' || this.props.faction === 'nurgle') {
       return (
         <div className="ui middle aligned selection list">
           {this.getNamesOfUnits()}
