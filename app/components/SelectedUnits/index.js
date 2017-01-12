@@ -30,7 +30,58 @@ class SelectedUnits extends React.Component { // eslint-disable-line react/prefe
           <div className="ui button" onClick={this.removeUnit.bind(this, key)}>Remove</div>
         </div>
         <div className="content">
-          <div className="header">{u.length} {u[0].name} {u[0].cost * u.length}pts</div>
+          <div className="header">
+            <div className="ui six mini statistics">
+              <div className="statistic">
+                <div className="text value">
+                  {u.length} {u[0].name}
+                </div>
+                <div className="label">
+                  {u[0].type}
+                </div>
+              </div>
+              <div className="statistic">
+                <div className="value">
+                  {u[0].cost * u.length}
+                </div>
+                <div className="label">
+                  points
+                </div>
+              </div>
+              <div className="statistic">
+                <div className="value">
+                  <i className="heart icon"></i> {u[0].wounds}
+                </div>
+                <div className="label">
+                  Wounds
+                </div>
+              </div>
+              <div className="statistic">
+                <div className="value">
+                  <i className="move icon"></i> {u[0].move}
+                </div>
+                <div className="label">
+                  Move
+                </div>
+              </div>
+              <div className="statistic">
+                <div className="value">
+                  <i className="universal access icon"></i> {u[0].save}
+                </div>
+                <div className="label">
+                  Save
+                </div>
+              </div>
+              <div className="statistic">
+                <div className="value">
+                  <i className="flag icon"></i> {u[0].bravery}
+                </div>
+                <div className="label">
+                  Bravery
+                </div>
+              </div>
+            </div>
+          </div>
           <hr />
           <b>Type:</b> {u[0].type}<br />
           <b>Avg. damage:</b> {calculateAvgDamage(u[0]) * u.length}dmg / turn({calculateAvgDamage(u[0])}dmg per model)<br />

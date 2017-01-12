@@ -461,7 +461,11 @@
                             "range": 1,
                             "stats": "D3/2/4/0/1"
                         }
-                    ]
+                    ],
+                    "wounds": 7,
+                    "save": 3,
+                    "move": 4,
+                    "bravery": 9
                 },
                 {
                     "name": "Festus the Leechlord",
