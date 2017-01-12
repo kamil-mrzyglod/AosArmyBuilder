@@ -59,7 +59,7 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
               <div className="content">
                 <div className="header">Order</div>
                 <div className="meta">
-                  <span className="category">Animals</span>
+                  <span className="category">Aelves, Aelves Legacy, Brettonia, Duardin, Fyreslayers, Humans, Seraphon, Stormcast, Sylvaneth</span>
                 </div>
                 <div className="description">
                   <p></p>
@@ -70,7 +70,7 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
               <div className="content">
                 <div className="header">Chaos</div>
                 <div className="meta">
-                  <span className="category">Animals</span>
+                  <span className="category">Herds & Monsters, Khorne, Legion of Azgorth, Nurgle, Skaven, Slaneesh, Tamurkhan's Horde, Tzeentch, Undivided</span>
                 </div>
                 <div className="description">
                   <p></p>
@@ -81,7 +81,7 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
               <div className="content">
                 <div className="header">Death</div>
                 <div className="meta">
-                  <span className="category">Animals</span>
+                  <span className="category">Death, Tomb Kings</span>
                 </div>
                 <div className="description">
                   <p></p>
@@ -92,7 +92,7 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
               <div className="content">
                 <div className="header">Destruction</div>
                 <div className="meta">
-                  <span className="category">Animals</span>
+                  <span className="category">Grots, Monsters & Troggoths, Ogors, Orruks</span>
                 </div>
                 <div className="description">
                   <p></p>
@@ -100,10 +100,8 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
               </div>
             </div>
           </div>
-            <Faction allegiance={this.state.allegiance} factionChanged={this.factionChanged.bind(this)} />
-          <div className="ui four stackable cards">
-            <FactionUnit faction={this.state.faction} unitSelected={this.unitSelected.bind(this)} />
-          </div>
+          <Faction allegiance={this.state.allegiance} factionChanged={this.factionChanged.bind(this)} />
+          <FactionUnit faction={this.state.faction} unitSelected={this.unitSelected.bind(this)} />
         </div>
       );
     }
