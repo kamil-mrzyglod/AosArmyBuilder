@@ -83,7 +83,6 @@ class SelectedUnits extends React.Component { // eslint-disable-line react/prefe
             </div>
           </div>
           <hr />
-          <b>Type:</b> {u[0].type}<br />
           <b>Avg. damage:</b> {calculateAvgDamage(u[0]) * u.length}dmg / turn({calculateAvgDamage(u[0])}dmg per model)<br />
           <b>Max. damage:</b> {calculateMaxDamage(u[0]) * u.length}dmg / turn({calculateMaxDamage(u[0])}dmg per model)
           <div className="ui small header center aligned">Weapon Efficiency</div>

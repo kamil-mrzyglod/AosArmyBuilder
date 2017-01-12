@@ -381,7 +381,11 @@
                             "range": 2,
                             "stats": "3/3/3/-1/D3"
                         }
-                    ]
+                    ],
+                    "wounds": 18,
+                    "save": 4,
+                    "move": 8,
+                    "bravery": 9
                 },
                 {
                     "name": "Bloab Rotspawned",
@@ -401,7 +405,11 @@
                             "range": 3,
                             "stats": "5/4/2/-1/1"
                         }
-                    ]
+                    ],
+                    "wounds": 12,
+                    "save": 4,
+                    "move": 10,
+                    "bravery": 9
                 },
                 {
                     "name": "Morbidex Twiceborn",
@@ -421,7 +429,11 @@
                             "range": 3,
                             "stats": "5/4/2/-1/1"
                         }
-                    ]
+                    ],
+                    "wounds": 12,
+                    "save": 3,
+                    "move": 10,
+                    "bravery": 9
                 },
                 {
                     "name": "Orghotts Daemonspew",
@@ -441,7 +453,11 @@
                             "range": 3,
                             "stats": "5/4/2/-1/1"
                         }
-                    ]
+                    ],
+                    "wounds": 12,
+                    "save": 3,
+                    "move": 10,
+                    "bravery": 9
                 },
                 {
                     "name": "Gutrot Spume",
@@ -480,7 +496,11 @@
                             "range": 1,
                             "stats": "2/4/3/0/D3"
                         }
-                    ]
+                    ],
+                    "wounds": 6,
+                    "save": 5,
+                    "move": 4,
+                    "bravery": 7
                 },
                 {
                     "name": "Lord of Plagues",
@@ -495,7 +515,11 @@
                             "range": 1,
                             "stats": "3/3/3/-1/D3"
                         }
-                    ]
+                    ],
+                    "wounds": 7,
+                    "save": 4,
+                    "move": 4,
+                    "bravery": 9
                 },
                 {
                     "name": "Harbinger of Decay",
@@ -515,7 +539,11 @@
                             "range": 1,
                             "stats": "D6/4/4/0/1"
                         }
-                    ]
+                    ],
+                    "wounds": 7,
+                    "save": 4,
+                    "move": 7,
+                    "bravery": 8
                 },
                 {
                     "name": "Rotbringers Sorcerer",
@@ -530,7 +558,11 @@
                             "range": 1,
                             "stats": "1/4/3/-1/D3"
                         }
-                    ]
+                    ],
+                    "wounds": 6,
+                    "save": 5,
+                    "move": 4,
+                    "bravery": 7
                 },
                 {
                     "name": "Putrid Blightkings",
@@ -559,7 +591,11 @@
                             "range": 1,
                             "stats": "3/3/3/0/1"
                         }
-                    ]
+                    ],
+                    "wounds": 3,
+                    "save": 4,
+                    "move": 4,
+                    "bravery": 8
                 }
             ]
         }
