@@ -46,7 +46,11 @@
                             "range": 2,
                             "stats": "3/4/2/-2/D6"
                         }
-                    ]
+                    ],
+                    "wounds": 14,
+                    "save": 5,
+                    "move": 14,
+                    "bravery": 7
                 },
                 {
                     "name": "Archmage",
@@ -76,7 +80,11 @@
                             "stats": "2/4/5/0/1",
                             "option": 0
                         }
-                    ]
+                    ],
+                    "wounds": 5,
+                    "save": 6,
+                    "move": 6,
+                    "bravery": 7
                 },
                 {
                     "name": "Loremaster",
@@ -91,7 +99,11 @@
                             "range": 1,
                             "stats": "2/3/3/-1/1"
                         }
-                    ]
+                    ],
+                    "wounds": 5,
+                    "save": 4,
+                    "move": 6,
+                    "bravery": 7
                 },
                 {
                     "name": "Swordmasters",
@@ -120,7 +132,11 @@
                             "range": 1,
                             "stats": "2/3/3/-1/1"
                         }
-                    ]
+                    ],
+                    "wounds": 1,
+                    "save": 4,
+                    "move": 6,
+                    "bravery": 7
                 }
             ],
             "Phoenix Temple": [
@@ -137,7 +153,11 @@
                             "range": 2,
                             "stats": "4/3/3/-1/1"
                         }
-                    ]
+                    ],
+                    "wounds": 5,
+                    "save": 4,
+                    "move": 6,
+                    "bravery": 7
                 },
                 {
                     "name": "Phoenix Guards",
@@ -166,7 +186,11 @@
                             "range": 2,
                             "stats": "2/3/3/0/1"
                         }
-                    ]
+                    ],
+                    "wounds": 1,
+                    "save": 4,
+                    "move": 6,
+                    "bravery": 7
                 },
                 {
                     "name": "Flamespyre Phoenix",
@@ -180,7 +204,11 @@
                             "range": 2,
                             "stats": "6/4/3/-1/2"
                         }
-                    ]
+                    ],
+                    "wounds": 12,
+                    "save": 5,
+                    "move": 16,
+                    "bravery": 8
                 },
                 {
                     "name": "Flamespyre Phoenix + Anointed",
@@ -199,7 +227,11 @@
                             "range": 2,
                             "stats": "4/3/3/-1/1"
                         }
-                    ]
+                    ],
+                    "wounds": 12,
+                    "save": 5,
+                    "move": 16,
+                    "bravery": 8
                 },
                 {
                     "name": "Frostheart Phoenix",
@@ -213,7 +245,11 @@
                             "range": 2,
                             "stats": "8/4/3/-1/2"
                         }
-                    ]
+                    ],
+                    "wounds": 12,
+                    "save": 5,
+                    "move": 16,
+                    "bravery": 9
                 },
                 {
                     "name": "Frostheart Phoenix + Anointed",
@@ -232,7 +268,11 @@
                             "range": 2,
                             "stats": "4/3/3/-1/1"
                         }
-                    ]
+                    ],
+                    "wounds": 12,
+                    "save": 5,
+                    "move": 16,
+                    "bravery": 9
                 }
             ],
             "Lion Rangers": [
@@ -263,7 +303,11 @@
                             "range": 2,
                             "stats": "2/3/3/-1/1"
                         }
-                    ]
+                    ],
+                    "wounds": 1,
+                    "save": 4,
+                    "move": 6,
+                    "bravery": 7
                 },
                 {
                     "name": "White Lion Chariots",
@@ -284,7 +328,11 @@
                             "range": 1,
                             "stats": "4/4/3/0/1"
                         }
-                    ]
+                    ],
+                    "wounds": 6,
+                    "save": 4,
+                    "move": 9,
+                    "bravery": 7
                 }
             ],
             "Order Draconis": [
@@ -316,7 +364,11 @@
                             "range": 2,
                             "stats": "3/4/2/-2/D6"
                         }
-                    ]
+                    ],
+                    "wounds": 14,
+                    "save": 4,
+                    "move": 14,
+                    "bravery": 8
                 },
                 {
                     "name": "Dragon Blades",
@@ -350,7 +402,11 @@
                             "range": 1,
                             "stats": "2/4/4/0/1"
                         }
-                    ]
+                    ],
+                    "wounds": 2,
+                    "save": 4,
+                    "move": 12,
+                    "bravery": 7
                 }
             ]
         }
