@@ -31,6 +31,9 @@ import 'sanitize.css/sanitize.css';
 // Import CSS for Semantic
 import '!!style-loader!css-loader!../semantic/semantic.min.css';
 
+// Import custom styles
+import '!!style-loader!css-loader!../styles/app.css';
+
 // Create redux store with history
 // this uses the singleton browserHistory provided by react-router
 // Optionally, this could be changed to leverage a created history

@@ -34,6 +34,7 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
     this.handleClose = this.handleClose.bind(this);
     this.getPercentage = this.getPercentage.bind(this);
     this.unitRemoved = this.unitRemoved.bind(this);
+    this.isSelectedAlliance = this.isSelectedAlliance.bind(this);
   }
 
   versionChange(e) {
@@ -54,8 +55,8 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
     if (this.state.version !== '') {
       return (
         <div>
-          <div className="ui four stackable cards">
-            <div className="blue card" onClick={() => this.allegianceSelected('order')}>
+          <div className="ui four link stackable cards">
+            <div className={this.isSelectedAlliance('blue', 'order')} onClick={() => this.allegianceSelected('order')}>
               <div className="content">
                 <div className="header">Order</div>
                 <div className="meta">
@@ -66,7 +67,7 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
                 </div>
               </div>
             </div>
-            <div className="red card" onClick={() => this.allegianceSelected('chaos')}>
+            <div className={this.isSelectedAlliance('red', 'chaos')} onClick={() => this.allegianceSelected('chaos')}>
               <div className="content">
                 <div className="header">Chaos</div>
                 <div className="meta">
@@ -77,7 +78,7 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
                 </div>
               </div>
             </div>
-            <div className="black card" onClick={() => this.allegianceSelected('death')}>
+            <div className={this.isSelectedAlliance('black', 'death')} onClick={() => this.allegianceSelected('death')}>
               <div className="content">
                 <div className="header">Death</div>
                 <div className="meta">
@@ -88,7 +89,7 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
                 </div>
               </div>
             </div>
-            <div className="green card" onClick={() => this.allegianceSelected('destruction')}>
+            <div className={this.isSelectedAlliance('green', 'destruction')} onClick={() => this.allegianceSelected('destruction')}>
               <div className="content">
                 <div className="header">Destruction</div>
                 <div className="meta">
@@ -105,6 +106,15 @@ class PpcRulesheet extends React.Component { // eslint-disable-line react/prefer
         </div>
       );
     }
+  }
+
+  isSelectedAlliance(color, alliance) {
+    var defaultClasses = color + " card"
+    if(this.state.allegiance === alliance) {
+      return defaultClasses + " active";
+    }
+
+    return defaultClasses;
   }
 
   allegianceSelected(allegiance) {

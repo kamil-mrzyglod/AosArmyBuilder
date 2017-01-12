@@ -1,0 +1,19 @@
+.ui.cards .card.blue.active {
+    background-color: #2185D0; 
+}
+
+.ui.cards .card.red.active {
+    background-color: #DB2828; 
+}
+
+.ui.cards .card.black.active {
+    background-color: #1b1c1d; 
+}
+
+.ui.cards .card.green.active {
+    background-color: #21ba45; 
+}
+
+.ui.cards .card.active .content .header, .ui.cards .card.active .content .meta {
+    color: #fff;
+}

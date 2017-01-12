@@ -23,7 +23,7 @@ class FactionUnit extends React.Component { // eslint-disable-line react/prefer-
   renderUnits() {
     if (this.props.faction === 'aelves' || this.props.faction === 'nurgle') {
       return (
-        <div className="ui six stackable cards">
+        <div className="ui six link stackable cards">
           {this.getNamesOfUnits()}
         </div>
       );

@@ -19,6 +19,7 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
     }
 
     this.factionSelected = this.factionSelected.bind(this);
+    this.isSelectedFaction = this.isSelectedFaction.bind(this);
   }
 
   factionSelected(faction) {
@@ -31,8 +32,8 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
   renderFactions() {
     if (this.props.allegiance === 'order') {
       return (
-        <div className="ui six stackable cards">
-          <div className="blue card" onClick={() => this.factionSelected('aelves')}>
+        <div className="ui six link stackable cards">
+          <div className={this.isSelectedFaction('blue', 'aelves')} onClick={() => this.factionSelected('aelves')}>
             <div className="content">
               <div className="header">Aelves</div>
               <div className="meta">
@@ -43,7 +44,7 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
               </div>
             </div>
           </div>
-          <div className="blue card" onClick={() => this.factionSelected('aelves_legacy')}>
+          <div className={this.isSelectedFaction('blue', 'aelves_legacy')} onClick={() => this.factionSelected('aelves_legacy')}>
             <div className="content">
               <div className="header">Aelves Legacy</div>
               <div className="meta">
@@ -54,7 +55,7 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
               </div>
             </div>
           </div>
-          <div className="blue card" onClick={() => this.factionSelected('brettonia')}>
+          <div className={this.isSelectedFaction('blue', 'brettonia')} onClick={() => this.factionSelected('brettonia')}>
             <div className="content">
               <div className="header">Brettonia</div>
               <div className="meta">
@@ -65,7 +66,7 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
               </div>
             </div>
           </div>
-          <div className="blue card" onClick={() => this.factionSelected('duardin')}>
+          <div className={this.isSelectedFaction('blue', 'duardin')} onClick={() => this.factionSelected('duardin')}>
             <div className="content">
               <div className="header">Duardin</div>
               <div className="meta">
@@ -76,7 +77,7 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
               </div>
             </div>
           </div>
-          <div className="blue card" onClick={() => this.factionSelected('fyreslayers')}>
+          <div className={this.isSelectedFaction('blue', 'fyreslayers')} onClick={() => this.factionSelected('fyreslayers')}>
             <div className="content">
               <div className="header">Fyreslayers</div>
               <div className="meta">
@@ -87,7 +88,7 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
               </div>
             </div>
           </div>
-          <div className="blue card" onClick={() => this.factionSelected('humans')}>
+          <div className={this.isSelectedFaction('blue', 'humans')} onClick={() => this.factionSelected('humans')}>
             <div className="content">
               <div className="header">Humans</div>
               <div className="meta">
@@ -98,7 +99,7 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
               </div>
             </div>
           </div>
-          <div className="blue card" onClick={() => this.factionSelected('seraphon')}>
+          <div className={this.isSelectedFaction('blue', 'seraphon')} onClick={() => this.factionSelected('seraphon')}>
             <div className="content">
               <div className="header">Seraphon</div>
               <div className="meta">
@@ -109,7 +110,7 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
               </div>
             </div>
           </div>
-          <div className="blue card" onClick={() => this.factionSelected('stormcast')}>
+          <div className={this.isSelectedFaction('blue', 'stormcast')} onClick={() => this.factionSelected('stormcast')}>
             <div className="content">
               <div className="header">Stormcast</div>
               <div className="meta">
@@ -120,7 +121,7 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
               </div>
             </div>
           </div>
-          <div className="blue card" onClick={() => this.factionSelected('sylvaneth')}>
+          <div className={this.isSelectedFaction('blue', 'sylvaneth')} onClick={() => this.factionSelected('sylvaneth')}>
             <div className="content">
               <div className="header">Sylvaneth</div>
               <div className="meta">
@@ -135,8 +136,8 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
       );
     } else if (this.props.allegiance === 'chaos') {
       return (
-        <div className="ui six stackable cards">
-          <div className="red card" onClick={() => this.factionSelected('herds_and_monsters')}>
+        <div className="ui six link stackable cards">
+          <div className={this.isSelectedFaction('red', 'herds_and_monsters')} onClick={() => this.factionSelected('herds_and_monsters')}>
             <div className="content">
               <div className="header">Herds & Monsters</div>
               <div className="meta">
@@ -147,7 +148,7 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
               </div>
             </div>
           </div>
-          <div className="red card" onClick={() => this.factionSelected('khorne')}>
+          <div className={this.isSelectedFaction('red', 'khorne')} onClick={() => this.factionSelected('khorne')}>
             <div className="content">
               <div className="header">Khorne</div>
               <div className="meta">
@@ -158,7 +159,7 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
               </div>
             </div>
           </div>
-          <div className="red card" onClick={() => this.factionSelected('legion_of_azgorth')}>
+          <div className={this.isSelectedFaction('red', 'legion_of_azgorth')} onClick={() => this.factionSelected('legion_of_azgorth')}>
             <div className="content">
               <div className="header">Legion of Azgorth</div>
               <div className="meta">
@@ -169,7 +170,7 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
               </div>
             </div>
           </div>
-          <div className="red card" onClick={() => this.factionSelected('nurgle')}>
+          <div className={this.isSelectedFaction('red', 'nurgle')} onClick={() => this.factionSelected('nurgle')}>
             <div className="content">
               <div className="header">Nurgle</div>
               <div className="meta">
@@ -180,7 +181,7 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
               </div>
             </div>
           </div>
-          <div className="red card" onClick={() => this.factionSelected('skaven')}>
+          <div className={this.isSelectedFaction('red', 'skaven')} onClick={() => this.factionSelected('skaven')}>
             <div className="content">
               <div className="header">Skaven</div>
               <div className="meta">
@@ -191,7 +192,7 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
               </div>
             </div>
           </div>
-          <div className="red card" onClick={() => this.factionSelected('slaneesh')}>
+          <div className={this.isSelectedFaction('red', 'slaneesh')} onClick={() => this.factionSelected('slaneesh')}>
             <div className="content">
               <div className="header">Slaneesh</div>
               <div className="meta">
@@ -202,7 +203,7 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
               </div>
             </div>
           </div>
-          <div className="red card" onClick={() => this.factionSelected('tamurkhans_horde')}>
+          <div className={this.isSelectedFaction('red', 'tamurkhans_horde')} onClick={() => this.factionSelected('tamurkhans_horde')}>
             <div className="content">
               <div className="header">Tamurkhan's Horde</div>
               <div className="meta">
@@ -213,7 +214,7 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
               </div>
             </div>
           </div>
-          <div className="red card" onClick={() => this.factionSelected('tzeentch')}>
+          <div className={this.isSelectedFaction('red', 'tzeentch')} onClick={() => this.factionSelected('tzeentch')}>
             <div className="content">
               <div className="header">Tzeentch</div>
               <div className="meta">
@@ -224,7 +225,7 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
               </div>
             </div>
           </div>
-          <div className="red card" onClick={() => this.factionSelected('undivided')}>
+          <div className={this.isSelectedFaction('red', 'undivided')} onClick={() => this.factionSelected('undivided')}>
             <div className="content">
               <div className="header">Undivided</div>
               <div className="meta">
@@ -239,8 +240,8 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
       );
     } else if (this.props.allegiance === 'death') {
       return (
-        <div className="ui six stackable cards">
-          <div className="black card" onClick={() => this.factionSelected('death')}>
+        <div className="ui six link stackable cards">
+          <div className={this.isSelectedFaction('black', 'death')} onClick={() => this.factionSelected('death')}>
             <div className="content">
               <div className="header">Death</div>
               <div className="meta">
@@ -251,7 +252,7 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
               </div>
             </div>
           </div>
-          <div className="black card" onClick={() => this.factionSelected('tomb_kings')}>
+          <div className={this.isSelectedFaction('black', 'tomb_kings')} onClick={() => this.factionSelected('tomb_kings')}>
             <div className="content">
               <div className="header">Tomb Kings</div>
               <div className="meta">
@@ -266,8 +267,8 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
       );
     } else if (this.props.allegiance === 'destruction') {
       return (
-        <div className="ui six stackable cards">
-          <div className="green card" onClick={() => this.factionSelected('grots')}>
+        <div className="ui six link stackable cards">
+          <div className={this.isSelectedFaction('green', 'grots')} onClick={() => this.factionSelected('grots')}>
             <div className="content">
               <div className="header">Grots</div>
               <div className="meta">
@@ -278,7 +279,7 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
               </div>
             </div>
           </div>
-          <div className="green card" onClick={() => this.factionSelected('monsters_and_troggoths')}>
+          <div className={this.isSelectedFaction('green', 'monsters_and_troggoths')} onClick={() => this.factionSelected('monsters_and_troggoths')}>
             <div className="content">
               <div className="header">Monsters & Troggoths</div>
               <div className="meta">
@@ -289,7 +290,7 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
               </div>
             </div>
           </div>
-          <div className="green card" onClick={() => this.factionSelected('ogors')}>
+          <div className={this.isSelectedFaction('green', 'ogors')} onClick={() => this.factionSelected('ogors')}>
             <div className="content">
               <div className="header">Ogors</div>
               <div className="meta">
@@ -300,7 +301,7 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
               </div>
             </div>
           </div>
-          <div className="green card" onClick={() => this.factionSelected('orruks')}>
+          <div className={this.isSelectedFaction('green', 'orruks')} onClick={() => this.factionSelected('orruks')}>
             <div className="content">
               <div className="header">Orruks</div>
               <div className="meta">
@@ -315,6 +316,15 @@ class Faction extends React.Component { // eslint-disable-line react/prefer-stat
     } else {
       return (<div></div>);
     }
+  }
+
+  isSelectedFaction(color, faction) {
+    var defaultClasses = color + " card"
+    if(this.state.faction === faction) {
+      return defaultClasses + " active";
+    }
+
+    return defaultClasses;
   }
 
   render() {
