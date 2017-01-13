@@ -31,7 +31,7 @@ class SelectedUnits extends React.Component { // eslint-disable-line react/prefe
         </div>
         <div className="content">
           <div className="header">
-            <div className="ui six mini statistics">
+            <div className="ui nine mini statistics">
               <div className="statistic">
                 <div className="text value">
                   {u.length} {u[0].name}
@@ -80,11 +80,25 @@ class SelectedUnits extends React.Component { // eslint-disable-line react/prefe
                   Bravery
                 </div>
               </div>
+              <div className="statistic">
+                <div className="value">
+                  {calculateAvgDamage(u[0]) * u.length}
+                </div>
+                <div className="label">
+                  Avg. damage
+                </div>
+              </div>
+              <div className="statistic">
+                <div className="value">
+                  {calculateMaxDamage(u[0]) * u.length}
+                </div>
+                <div className="label">
+                  Max. damage
+                </div>
+              </div>
             </div>
           </div>
           <hr />
-          <b>Avg. damage:</b> {calculateAvgDamage(u[0]) * u.length}dmg / turn({calculateAvgDamage(u[0])}dmg per model)<br />
-          <b>Max. damage:</b> {calculateMaxDamage(u[0]) * u.length}dmg / turn({calculateMaxDamage(u[0])}dmg per model)
           <div className="ui small header center aligned">Weapon Efficiency</div>
           <WeaponEfficiency unit={u[0]} />
         </div>
