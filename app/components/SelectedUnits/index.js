@@ -6,6 +6,7 @@
 
 import React from 'react';
 import * as _ from 'lodash';
+import { Image } from 'semantic-ui-react';
 
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
@@ -25,21 +26,18 @@ class SelectedUnits extends React.Component { // eslint-disable-line react/prefe
 
     var units = _.groupBy(this.props.units, 'name');
     _.forIn(units, (u, key) => {
-      elements.push(<div key={key} className="item">
-        <div className="right floated content">
-          <div className="ui button" onClick={this.removeUnit.bind(this, key)}>Remove</div>
-        </div>
-        <div className="content">
-          <div className="header">
-            <div className="ui nine mini statistics">
-              <div className="statistic">
-                <div className="text value">
-                  {u.length} {u[0].name}
-                </div>
-                <div className="label">
-                  {u[0].type}
-                </div>
+      elements.push(<div key={key} className="ui clearing segment">
+        <div className="ui segments">
+          <div className="ui secondary segment">
+            <div className="ui right floated button" onClick={this.removeUnit.bind(this, key)}>Remove</div>
+            <h2 className="ui center aligned header">
+              <Image src={u[0].image} shape="circular" size="tiny" />
+              <div className="content">
+                {u.length} {u[0].name}
+                <div className="sub header">{u[0].type}</div>
               </div>
+            </h2>
+            <div className="ui seven mini statistics">
               <div className="statistic">
                 <div className="value">
                   {u[0].cost * u.length}
@@ -98,16 +96,17 @@ class SelectedUnits extends React.Component { // eslint-disable-line react/prefe
               </div>
             </div>
           </div>
-          <hr />
-          <div className="ui small header center aligned">Weapon Efficiency</div>
-          <WeaponEfficiency unit={u[0]} />
+          <div className="ui segment">
+            <div className="ui small header center aligned">Weapon Efficiency</div>
+            <WeaponEfficiency unit={u[0]} />
+            <div className="ui divider"></div>
+          </div>
         </div>
-        <div className="ui divider"></div>
       </div>);
     })
 
     return (
-      <div className="ui middle aligned list">{elements}</div>
+      <div className="ui piled segments">{elements}</div>
     );
   }
 
